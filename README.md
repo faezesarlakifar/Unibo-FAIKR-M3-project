@@ -60,7 +60,7 @@ Clone the repository and install the required packages:
 git clone https://github.com/faezesarlakifar/Unibo-FAIKR-M3-project
 cd "Unibo-FAIKR-M3-project"
 pip install -r requirements.txt
-apt-get install -q graphviz libgraphviz-dev pkg-config
+sudo apt-get install graphviz libgraphviz-dev pkg-config
 ```
 
 Run Inference
