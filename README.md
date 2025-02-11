@@ -20,12 +20,16 @@ The dataset used in this study can be accessed here: **[Diabetes Health Indicato
 ## Proposed Bayesian Network Structure  
 
 <!-- ![Bayesian Network Structure](plots/domain-knowledge-based-network.png)  -->
+<p align="center">
 <img src="plots/domain-knowledge-based-network.png" width="600"/>
+</p>
 
 ## Top-Performing Bayesian Network Structure Learned via AI Techniques
 #### Hill Climbing Search with K2 Scoring Method
 <!-- ![Bayesian Network Structure](plots/k2-after-feature-selection.png)   -->
+<p align="center">
 <img src="plots/k2-after-feature-selection.png" width="500"/>
+</p>
 
 ## Repository Structure  
 
@@ -35,7 +39,7 @@ The dataset used in this study can be accessed here: **[Diabetes Health Indicato
 
 - **bayesian network modeling**  
   - `ai_based_structure_learning.py`: Data-driven Bayesian Network construction using various AI techniques.  
-  - `domain_knowledge_driven.py`: Manually designs the Bayesian Network structure using insights from research literature. 
+  - `domain_knowledge_driven.py`: Manually designs the Bayesian Network structure using insights from the research literature. 
   - For both Bayesian Modeling approaches, `pgmpy` library is used.
 
 - **evaluation & inference**  
@@ -51,7 +55,7 @@ The dataset used in this study can be accessed here: **[Diabetes Health Indicato
 ## Usage  
 
 ### Install Dependencies  
-Clone the repository and install required packages:  
+Clone the repository and install the required packages:  
 ```bash
 git clone https://github.com/faezesarlakifar/Unibo-FAIKR-M3-project
 cd "Unibo-FAIKR-M3-project"
@@ -65,18 +69,22 @@ cd "evaluation & inference"
 python inference.py
 ```
 ## Notebooks
-- You can directly access the main notebook with all the experiments reuslts here: [diabetes_risk_analysis_(lightweight).ipynb](diabetes_risk_analysis_(lightweight).ipynb)
+- You can directly access the main notebook with all the experiment results here: [diabetes_risk_analysis_(lightweight).ipynb](diabetes_risk_analysis_(lightweight).ipynb)
 - A notebook containing all existing evaluation steps (each variable elimination) is `Diabetes_Risk_Prediction.ipynb`. Since it has a large file size, a lightweight version is provided for easier exploration."
 
 ## Cool insights
 
 ### ShAP Analysis Results
+<p align="center">
 <img src="https://github.com/user-attachments/assets/472cec53-3b3a-4095-b0f6-9144cbe02cf6" width="600"/>
+</p>
 
 Top features are selected based on this result.
 
 ### SHAP dependence plot for Education vs GenHealth
+<p align="center">
 <img src="https://github.com/user-attachments/assets/76d0d7a3-72d9-43e6-bf97-74cc7b2f9bc9" width="600"/>
+</p>
 
 This plot suggests that individuals with higher education levels have better general health. (Education levels range from 1 _lowest_ to 6 _highest_, while GenHealth values are in reverse order, with 5 indicating the poorest health and 1 the best). More insightful plots are available in the feature engineering section of the main notebook. 🙂
 
