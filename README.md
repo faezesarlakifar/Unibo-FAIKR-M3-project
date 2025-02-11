@@ -15,7 +15,7 @@ The dataset used in this study can be accessed here: **[Diabetes Health Indicato
 2. **Structure Learning**: Bayesian Networks are constructed using both data-driven and domain knowledge-based approaches.
 3. **Parameter Estimation**: Maximum Likelihood Estimation (MLE) is applied to estimate Conditional Probability Distributions (CPDs).
 4. **Evaluation**: Models are assessed using the AUC-ROC evaluation metric to identify top-performing models.
-5. **Inference**: The top Bayesian Networks are used for probabilistic reasoning, enabling predictions and risk assessments based on given evidence.
+5. **Inference**: The top-performing Bayesian Networks are employed for probabilistic reasoning, enabling predictions and risk assessments based on given evidence, with Variable Elimination used as the inference method.
 
 ## Proposed Bayesian Network Structure  
 
