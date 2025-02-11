@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.1.5)  10 FEB 2025 23:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.1.5)  11 FEB 2025 01:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -486,13 +486,19 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 40.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 40.
-
-
 LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 
-67.
+68.
+
 (C:\Users\Faeze\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmtt.fd
 File: ot1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
+
+
+Underfull \hbox (badness 4595) in paragraph at lines 97--98
+[]\OT1/lmr/m/n/10 Figure 1 presents the Do-main Knowledge-Based
+ []
+
+
 
 [1{C:/Users/Faeze/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/Fa
 eze/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}
@@ -500,10 +506,6 @@ eze/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}
 
 
 {C:/Users/Faeze/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rmtt.enc}]
-Underfull \hbox (badness 2409) in paragraph at lines 101--102
-[]\OT1/lmr/m/n/10 Data-Driven Learn-ing { Bayesian struc-tures were
- []
-
 <images/bn-domain-knowledge.png, id=25, 573.8238pt x 448.074pt>
 File: images/bn-domain-knowledge.png Graphic file (type png)
 <use images/bn-domain-knowledge.png>
@@ -542,20 +544,20 @@ L3 programming layer <2024-12-09>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 12584 strings out of 473576
- 210786 string characters out of 5716297
+ 12586 strings out of 473576
+ 210808 string characters out of 5716297
  623792 words of memory out of 5000000
- 35585 multiletter control sequences out of 15000+600000
+ 35587 multiletter control sequences out of 15000+600000
  597543 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,11n,79p,862b,439s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,11n,79p,853b,490s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Faeze/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pf
 b><C:/Users/Faeze/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pf
 b><C:/Users/Faeze/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb
 ><C:/Users/Faeze/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><
 C:/Users/Faeze/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><
 C:/Users/Faeze/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb>
-Output written on report.pdf (2 pages, 280625 bytes).
+Output written on report.pdf (2 pages, 280584 bytes).
 PDF statistics:
  82 PDF objects out of 1000 (max. 8388607)
  22 named destinations out of 1000 (max. 500000)

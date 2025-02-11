@@ -44,7 +44,7 @@ faezeh.sarlakifar@studio.unibo.it
 \begin{abstract}
 \begin{quote}
 
-Diabetes is a chronic and widespread health condition that affects many individuals worldwide. Early prediction and risk assessment are essential for effective prevention and management. In this study, the application of Bayesian Networks (BNs) to model the probabilistic relationships between health indicators and diabetes risk is explored. Multiple Bayesian structures are developed using Naïve Bayes, Hill Climbing (with various scoring methods), Simulated Annealing, and domain knowledge-driven techniques. To enhance model interpretability and predictive performance, a comprehensive feature selection approach is employed. The results demonstrate that Bayesian Networks offer an interpretable and robust framework for diabetes risk prediction, highlighting their potential for real-world healthcare applications.
+Diabetes is a chronic and widespread health condition that affects many individuals worldwide. Early prediction and risk assessment are essential for effective prevention and management. In this study, the application of Bayesian Networks (BNs) to model the probabilistic relationships between health indicators and diabetes risk is explored. Multiple Bayesian structures are developed using Naïve Bayes, Hill Climbing (with various scoring methods), Simulated Annealing, and domain knowledge-based techniques. To enhance model interpretability and predictive performance, a comprehensive feature selection approach is employed. The results demonstrate that Bayesian Networks offer an interpretable and robust framework for diabetes risk prediction, highlighting their potential for real-world healthcare applications.
 
 \end{quote}
 \end{abstract}
@@ -54,13 +54,14 @@ Diabetes is a chronic and widespread health condition that affects many individu
 
 \subsection{Domain}
 
-In the field of medical health assessment, the interpretability and reliability of Artificial Intelligence (AI) methods are crucial, especially when it comes to conditions like diabetes. Healthcare professionals must be able to understand and trust the outcomes of predictive models to make informed decisions about patient care. Bayesian Networks (BNs) are particularly suitable for this purpose in diabetes risk assessment, as they provide a clear and interpretable framework that allows practitioners to understand the probabilistic relationships between various health indicators, such as age, BMI, and their impact on diabetes risk. This transparency is essential for building trust in AI models and ensuring they can be effectively integrated into clinical decision-making processes, ultimately improving patient outcomes.
+In the field of medical health assessment, the interpretability and reliability of Artificial Intelligence (AI) methods are crucial, especially when it comes to conditions like diabetes. Healthcare professionals must be able to understand and trust the outcomes of predictive models to make informed decisions about patient care. Bayesian Networks (BNs) are particularly suitable for this purpose in diabetes risk assessment, as they provide an interpretable framework that allows practitioners to understand the probabilistic relationships between various health indicators, such as age, BMI, and their impact on diabetes risk. This transparency is essential for building trust in AI models and ensuring they can be effectively integrated into clinical decision-making processes, ultimately improving patient outcomes.
 
 This research is inspired by the study conducted by \citet{kong2024}, whose findings have been utilized to design the domain knowledge-based Bayesian Network model.
 
 \subsection{Aim}
 
-The goal of this project is to explore the effectiveness of Bayesian Networks (BNs) in modeling the probabilistic relationships between health indicators and diabetes risk. By leveraging different structure-learning approaches, the study aims to develop an effective and interpretable framework for diabetes risk assessment, evaluated using the area under the ROC curve (AUC-ROC) metric.
+The goal of this project is to explore the effectiveness of Bayesian Networks (BNs) in modeling the probabilistic relationships between health indicators and diabetes risk. By leveraging different structure-learning approaches, the study aims to develop an robust and interpretable framework for diabetes risk assessment.
+%, evaluated using the area under the ROC curve (AUC-ROC) metric.
 
 \subsection{Method} 
 
@@ -90,16 +91,15 @@ The experimental results show that, the Hill Climbing method (with K2 scoring), 
 
 \section{Model}
 
-In the proposed Bayesian Network, nodes represent key risk factors, while directed edges capture probabilistic dependencies based on expert knowledge and prior research. The variables—‘HighBP’, ‘GenHlth’, ‘HighChol’, ‘Age’, ‘Sex’, ‘Income’, ‘DiffWalk’, ‘BMI’, ‘HeartDiseaseorAttack’, and ‘Education’—were selected using SHAP values.
 
-Figure 1 presents the Domain Knowledge Bayesian Network, illustrating the probabilistic dependencies between features.
+In the proposed Bayesian Network, nodes represent key diabetes risk factors, while directed edges capture probabilistic dependencies based on expert knowledge and prior research. 
 
-%To ensure that the most relevant predictors were included, SHAP values were computed using an XGBoost classifier, a powerful gradient boosting model known for its ability to capture nonlinear interactions between features. SHAP values provide a consistent measure of feature contribution.
+Figure 1 presents the Domain Knowledge-Based Bayesian Network, illustrating the probabilistic dependencies between features.
 
-For structure learning, two complementary approaches were employed:
+ To establish the network structure, two approaches are employed:
 \begin{enumerate}
-	\item Data-Driven Learning – Bayesian structures were learned using algorithms including Hill Climbing (BIC, K2, BDeu) and Simulated Annealing, optimizing for the highest AUC-ROC score. These models establish probabilistic relationships purely from data.
-	\item Domain Knowledge-Based Network – A causally meaningful structure was designed based on established medical research, ensuring the relationships between variables align with known diabetes risk factors. The edges in this network reflect dependencies supported by scientific studies.
+	\item Data-Driven Learning: Bayesian structures are learned using algorithms including Hill Climbing (BIC, K2, BDeu) and Simulated Annealing, optimizing for the highest AUC-ROC score. These models establish probabilistic relationships purely from data. Using SHAP values, ten critical variables were identified: HighBP, GenHlth, HighChol, Age, Sex, Income, DiffWalk, BMI, HeartDiseaseorAttack, and Education. These variables serve as nodes in the AI-based Bayesian Networks.
+	\item Domain Knowledge-Based Network: A causally meaningful structure is designed based on established medical research, ensuring the relationships between variables align with known diabetes risk factors. The edges in this network reflect dependencies supported by scientific studies.
 \end{enumerate}
 
 \begin{figure}[ht]
@@ -109,7 +109,7 @@ For structure learning, two complementary approaches were employed:
 	\label{fig:model}
 \end{figure}
 
-For parameter learning, Maximum Likelihood Estimation (MLE) was applied to estimate the Conditional Probability Distributions (CPDs).
+For parameter learning, Maximum Likelihood Estimation (MLE) is applied to estimate the Conditional Probability Distributions (CPDs).
 %Among the trained models, the domain knowledge-based BN was selected for further analysis due to its strong performance and alignment with known risk factors.
 
 
@@ -122,11 +122,11 @@ This study employs the Diabetes Health Indicators dataset from the Behavioral Ri
 
 %This study employs the Diabetes Health Indicators dataset from the Behavioral Risk Factor Surveillance System (BRFSS). The cleaned dataset consists of 70,692 instances and 21 health-related features, which include demographics, lifestyle factors, and medical conditions. This makes the dataset a valuable resource for assessing diabetes risk. The dataset is then divided into training and validation sets. The training set is used to fit models, while the validation set serves to evaluate their performance. Models are compared using the AUC-ROC evaluation metric.
 
-It was hypothesized that the domain knowledge-based model would outperform the others, as it is inspired by insights from scientific literature and incorporates relationships derived from the best-performing AI-based models. The results support this hypothesis, demonstrating the superiority of the domain knowledge-based approach. 
+It was hypothesized that the domain knowledge-based model would outperform the others, as it is inspired by insights from scientific literature. The results support this hypothesis, demonstrating the superiority of the domain knowledge-based approach. 
 
 \subsection{Results}
 
-Table 1 presents a comparison of the various methods experimented with for constructing the Bayesian Network. The results show that the Hill Climbing algorithm with the K2 scoring method outperforms other artificial intelligence-based models, and the domain knowledge-based approach surpasses all. Although the simulated annealing model was anticipated to perform better than Hill Climbing, the Hill Climbing with K2 scoring method proved to be more effective for diabetes risk assessment, which is an intriguing finding.
+Table 1 presents a comparison of the various methods experimented for constructing the Bayesian Network. The results show that the Hill Climbing algorithm with the K2 scoring method outperforms other AI-based models, and the domain knowledge-based approach surpasses all. Although the simulated annealing model was anticipated to perform better than Hill Climbing, the Hill Climbing with K2 scoring method achieved higher AUC score for diabetes risk assessment, which is an intriguing finding.
 %\begin{table}[h]
 %%	\centering
 %	\caption{Comparison of AI-Based Bayesian Networks}
@@ -184,7 +184,7 @@ Table 1 presents a comparison of the various methods experimented with for const
 
 
 \section{Conclusion}
-This study validates the effectiveness of Bayesian Networks for diabetes risk assessment, achieving an AUC-ROC score of 83.57 through the integration of domain knowledge from scientific literature. Furthermore, with increased computational resources for Bayesian structure learning and parameter learning, the models could potentially achieve higher predictive performance. The findings demonstrate that Bayesian Networks approach provides a valuable framework for diabetes risk prediction.
+This study validates the effectiveness of Bayesian Networks for diabetes risk assessment, achieving an AUC-ROC score of 83.57 through the integration of domain knowledge from scientific literature. Furthermore, with increased computational resources for Bayesian structure learning and parameter learning, the models could potentially achieve higher predictive performance. Overall, the findings demonstrate that Bayesian Networks approach provides a valuable framework for diabetes risk prediction.
 
 \section{Links to external resources}
 
@@ -197,7 +197,7 @@ This study validates the effectiveness of Bayesian Networks for diabetes risk as
      \href{https://www.kaggle.com/datasets/alexteboul/diabetes-health-indicators-dataset}{\textcolor{blue}{Kaggle diabetes health indicators dataset}}
 \end{itemize}
 
-%\bigskip
+\bigskip
 
 %\bibliographystyle{aaai}
 \bibliographystyle{plainnat}

@@ -5,8 +5,11 @@
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[Chen and Guestrin()]{XGBoost}
+\bibitem[Chen and Guestrin(2016)]{XGBoost}
 Tianqi Chen and Carlos Guestrin.
+\newblock ``xgboost: A scalable tree boosting system''.
+\newblock page 785–794, 2016.
+\newblock \doi{10.1145/2939672.2939785}.
 
 \bibitem[Kong et~al.(2024)Kong, Chen, Chen, Zhao, Huang, Luo, Lai, Yang, Wang,
   Zhang, Chen, Mai, Yu, Wu, and Ding]{kong2024}
@@ -16,6 +19,7 @@ Danli Kong, Rong Chen, Yongze Chen, Le~Zhao, Ruixian Huang, Ling Luo, Fengxia
 \newblock ``bayesian network analysis of factors influencing type 2 diabetes,
   coronary heart disease, and their comorbidities''.
 \newblock \emph{BMC Public Health}, 24, 2024.
+\newblock \doi{10.1186/s12889-024-18737-x}.
 
 \bibitem[Lundberg and Lee(2017)]{SHAP}
 Scott~M. Lundberg and Su-In Lee.
