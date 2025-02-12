@@ -20,7 +20,7 @@
 \usepackage[numbers]{natbib}
 \usepackage[bottom]{footmisc}
 \frenchspacing
-\usepackage[left=0.6in, right=0.6in, top=0.8in, bottom=0.85in]{geometry}
+\usepackage[left=0.6in, right=0.6in, top=0.65in, bottom=0.8in]{geometry}
 
 \hypersetup{pdfinfo={
 Title={Title}
@@ -60,7 +60,7 @@ This research is inspired by the study conducted by \citet{kong2024}, whose find
 
 \subsection{Aim}
 
-The goal of this project is to explore the effectiveness of Bayesian Networks (BNs) in modeling the probabilistic relationships between health indicators and diabetes risk. By leveraging different structure-learning approaches, the study aims to develop an robust and interpretable framework for diabetes risk assessment.
+The goal of this project is to explore the effectiveness of Bayesian Networks (BNs) in modeling the probabilistic relationships between health indicators and diabetes risk. By leveraging different structure-learning approaches, the study aims to develop a robust and interpretable framework for diabetes risk assessment.
 %, evaluated using the area under the ROC curve (AUC-ROC) metric.
 
 \subsection{Method} 
@@ -69,7 +69,7 @@ In this study, a Bayesian Network (BN) is built and evaluated using the ``\textt
 
 %To improve predictive performance and interpretability, a feature engineering step is applied to select the most important features for building the Bayesian Network. The SHAP (SHapley Additive exPlanations) values are defined to identify the most influential features. Implemented using the ``\texttt{SHAP}'' Python library. 
 
-To improve predictive performance and interpretability, a feature engineering step is applied to select the most important features for building the Bayesian Network. SHAP (SHapley Additive exPlanations) values are employed to identify features importance, implemented using the ``\texttt{SHAP}'' Python library. These values are computed by training an XGBoost classifier \citep{XGBoost} and analyzing its explanations using TreeExplainer, a method specifically designed for tree-based models to capture complex nonlinear relationships. Since SHAP values provide a consistent measure of feature contribution in such models \citep{SHAP}, they serve as a robust criterion for feature selection. Based on these values, the top ten most influential features are selected for further modeling.
+To improve predictive performance and interpretability, a feature engineering step is applied to select the most important features for building the Bayesian Network. SHAP (SHapley Additive exPlanations) values are employed to identify features importance, implemented using the ``\texttt{SHAP}'' Python library. These values are computed by training an XGBoost classifier \citep{XGBoost} and analyzing its explanations using TreeExplainer, a method specifically designed for tree-based models to capture complex nonlinear relationships. Since SHAP values provide a consistent measure of feature contribution in such models \citep{SHAP}, they serve as a robust criterion for feature selection.
 
 %\begin{enumerate}
 %	\item SHAP (SHapley Additive exPlanations) values to identify the most influential features. Implemented using the ``\texttt{SHAP}'' Python library.
@@ -80,13 +80,14 @@ To improve predictive performance and interpretability, a feature engineering st
 
 % aligning with established diabetes risk factors from scientific literature and 
 
-For parameter learning, the Conditional Probability Distributions (CPDs) are estimated using Maximum Likelihood Estimation (MLE) due to its efficiency in deterministic settings. The trained models are then evaluated using AUC-ROC scores to assess their classification performance.  
+For parameter learning, the Conditional Probability Distributions (CPDs) are estimated using Maximum Likelihood Estimation (MLE) due to its efficiency in deterministic settings. The trained models are then evaluated using AUC-ROC scores to assess their classification performance.
+The top-performing Bayesian Networks are then employed for probabilistic reasoning, enabling predictions and risk assessments based on given evidence, with Variable Elimination used as the inference method.   
 
 % Finally, the best-performing BN model is further analyzed to interpret probabilistic dependencies between diabetes risk factors.
 
 \subsection{Results}
 
-The experimental results show that, the Hill Climbing method (with K2 scoring), with an AUC score of 81.30, and the Domain Knowledge-driven method, with an AUC score of 83.57, effectively capture the relationships between features for diabetes risk assessment. These results suggest that both data-driven and expert-informed Bayesian Network structures can model the probabilistic relationships among health indicators.
+The experimental results show that the Hill Climbing method (with K2 scoring), with an AUC score of 81.30, and the Domain Knowledge-driven method, with an AUC score of 83.57, effectively capture the relationships between features for diabetes risk assessment. These results suggest that both data-driven and expert-informed Bayesian Network structures can model the probabilistic relationships among health indicators.
 % Furthermore, with increased computational resources for Bayesian structure learning and parameter learning, the models could potentially achieve higher predictive performance.
 
 \section{Model}
@@ -98,7 +99,7 @@ Figure 1 presents the Domain Knowledge-Based Bayesian Network, illustrating the 
 
  To establish the network structure, two approaches are employed:
 \begin{enumerate}
-	\item Data-Driven Learning: Bayesian structures are learned using algorithms including Hill Climbing (BIC, K2, BDeu) and Simulated Annealing, optimizing for the highest AUC-ROC score. These models establish probabilistic relationships purely from data. Using SHAP values, ten critical variables were identified: HighBP, GenHlth, HighChol, Age, Sex, Income, DiffWalk, BMI, HeartDiseaseorAttack, and Education. These variables serve as nodes in the AI-based Bayesian Networks.
+	\item Data-Driven Learning: Bayesian structures are learned using algorithms including Hill Climbing (BIC, K2, BDeu) and Simulated Annealing, optimizing for the highest AUC-ROC score. These models establish probabilistic relationships purely from data. Using SHAP values, ten critical variables were identified: ``HighBP\footnote{Indicates whether a person has high blood pressure.}'', ``GenHlth\footnote{general health status.}'', ``HighChol\footnote{Presence of high cholesterol.}'', ``Age'', ``Sex'', ``Income'', ``DiffWalk\footnote{Difficulty in walking.}'', ``BMI'', ``HeartDiseaseorAttack'', and ``Education''. These variables serve as nodes in the AI-based Bayesian Networks.
 	\item Domain Knowledge-Based Network: A causally meaningful structure is designed based on established medical research, ensuring the relationships between variables align with known diabetes risk factors. The edges in this network reflect dependencies supported by scientific studies.
 \end{enumerate}
 
@@ -184,7 +185,7 @@ Table 1 presents a comparison of the various methods experimented for constructi
 
 
 \section{Conclusion}
-This study validates the effectiveness of Bayesian Networks for diabetes risk assessment, achieving an AUC-ROC score of 83.57 through the integration of domain knowledge from scientific literature. Furthermore, with increased computational resources for Bayesian structure learning and parameter learning, the models could potentially achieve higher predictive performance. Overall, the findings demonstrate that Bayesian Networks approach provides a valuable framework for diabetes risk prediction.
+This study validates the effectiveness of Bayesian Networks for diabetes risk assessment, achieving an AUC-ROC score of 83.57 through the integration of domain knowledge from scientific literature. Furthermore, with increased computational resources for Bayesian structure learning and parameter estimation, the models could potentially achieve higher predictive performance. Overall, the findings demonstrate that Bayesian Networks provide a valuable framework for diabetes risk prediction.
 
 \section{Links to external resources}
 
@@ -197,7 +198,7 @@ This study validates the effectiveness of Bayesian Networks for diabetes risk as
      \href{https://www.kaggle.com/datasets/alexteboul/diabetes-health-indicators-dataset}{\textcolor{blue}{Kaggle diabetes health indicators dataset}}
 \end{itemize}
 
-\bigskip
+%\bigskip
 
 %\bibliographystyle{aaai}
 \bibliographystyle{plainnat}

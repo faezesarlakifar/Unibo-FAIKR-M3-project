@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.1.5)  11 FEB 2025 01:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.1.5)  12 FEB 2025 00:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -438,14 +438,14 @@ Package hyperref Info: Link coloring OFF on input line 30.
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
 * h-part:(L,W,R)=(43.36243pt, 527.57014pt, 43.36243pt)
-* v-part:(T,H,B)=(57.81621pt, 675.72385pt, 61.42993pt)
+* v-part:(T,H,B)=(46.97505pt, 690.17873pt, 57.81621pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
 * \textwidth=527.57014pt
-* \textheight=675.72385pt
+* \textheight=690.17873pt
 * \oddsidemargin=-28.90756pt
 * \evensidemargin=-28.90756pt
-* \topmargin=-14.45378pt
+* \topmargin=-25.29494pt
 * \headheight=0.0pt
 * \headsep=0.0pt
 * \topskip=10.0pt
@@ -494,7 +494,7 @@ File: ot1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 
 
-Underfull \hbox (badness 4595) in paragraph at lines 97--98
+Underfull \hbox (badness 4595) in paragraph at lines 98--99
 []\OT1/lmr/m/n/10 Figure 1 presents the Do-main Knowledge-Based
  []
 
@@ -506,31 +506,51 @@ eze/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}
 
 
 {C:/Users/Faeze/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rmtt.enc}]
-<images/bn-domain-knowledge.png, id=25, 573.8238pt x 448.074pt>
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 102.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 102.
+
+Underfull \hbox (badness 3281) in paragraph at lines 102--103
+\OT1/lmr/m/n/10 high-est AUC-ROC score. These mod-els es-tab-lish
+ []
+
+
+Underfull \hbox (badness 1303) in paragraph at lines 102--103
+\OT1/lmr/m/n/10 prob-a-bilis-tic re-la-tion-ships purely from data. Us-ing
+ []
+
+
+Underfull \hbox (badness 2221) in paragraph at lines 102--103
+\OT1/lmr/m/n/10 ``In-come'', ``Dif-fWalk[][][]'', ``BMI'', ``Heart-Dis-ease-o-r
+At-
+ []
+
+<images/bn-domain-knowledge.png, id=29, 573.8238pt x 448.074pt>
 File: images/bn-domain-knowledge.png Graphic file (type png)
 <use images/bn-domain-knowledge.png>
-Package pdftex.def Info: images/bn-domain-knowledge.png  used on input line 107
+Package pdftex.def Info: images/bn-domain-knowledge.png  used on input line 108
 .
 (pdftex.def)             Requested size: 263.78506pt x 205.97978pt.
 
-Overfull \hbox (13.55061pt too wide) in paragraph at lines 107--108
+Overfull \hbox (13.55061pt too wide) in paragraph at lines 108--109
  [][] 
  []
 
 
-Underfull \hbox (badness 1910) in paragraph at lines 120--121
+Underfull \hbox (badness 1910) in paragraph at lines 121--122
 \OT1/lmr/m/n/10 This study em-ploys the Di-a-betes Health In-di-ca-tors
  []
 
 
 
 
-Overfull \hbox (12.2931pt too wide) in paragraph at lines 170--183
+Overfull \hbox (12.2931pt too wide) in paragraph at lines 171--184
  [][] 
  []
 
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
-92.
+93.
 (C:\Users\Faeze\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -544,22 +564,24 @@ L3 programming layer <2024-12-09>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 12586 strings out of 473576
- 210808 string characters out of 5716297
+ 12603 strings out of 473576
+ 210994 string characters out of 5716297
  623792 words of memory out of 5000000
- 35587 multiletter control sequences out of 15000+600000
- 597543 words of font info for 57 fonts, out of 8000000 for 9000
+ 35595 multiletter control sequences out of 15000+600000
+ 601793 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,11n,79p,853b,490s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Faeze/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pf
 b><C:/Users/Faeze/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pf
 b><C:/Users/Faeze/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb
-><C:/Users/Faeze/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><
-C:/Users/Faeze/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><
-C:/Users/Faeze/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb>
-Output written on report.pdf (2 pages, 280584 bytes).
+><C:/Users/Faeze/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><
+C:/Users/Faeze/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:
+/Users/Faeze/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/U
+sers/Faeze/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/U
+sers/Faeze/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb>
+Output written on report.pdf (2 pages, 321558 bytes).
 PDF statistics:
- 82 PDF objects out of 1000 (max. 8388607)
- 22 named destinations out of 1000 (max. 500000)
+ 101 PDF objects out of 1000 (max. 8388607)
+ 26 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
