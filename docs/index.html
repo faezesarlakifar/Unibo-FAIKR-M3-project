@@ -3,23 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diabetes Prediction</title>
-    <link rel="stylesheet" href="static/styles.css">
+    <title>Project Report</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        iframe {
+            width: 100%;
+            min-height: 500px;
+            border: none;
+        }
+    </style>
 </head>
 <body>
-    <h1>Diabetes Prediction Using Bayesian Networks</h1>
-    <form id="prediction-form">
-        <label for="highbp">High Blood Pressure (0 or 1):</label>
-        <input type="number" id="highbp" required><br>
-        
-        <label for="bmi">BMI:</label>
-        <input type="number" id="bmi" step="0.1" required><br>
+    <!-- <h1>Project Report</h1> -->
+    <iframe id="pdfViewer" src="report.pdf" title="report.pdf"></iframe>
 
-        <button type="submit">Predict</button>
-    </form>
+    <script>
+        function adjustIframeHeight() {
+            var iframe = document.getElementById('pdfViewer');
+            iframe.style.height = window.innerHeight + 'px';
+        }
 
-    <h2>Prediction Result: <span id="result">N/A</span></h2>
-
-    <script src="static/script.js"></script>
+        window.onload = adjustIframeHeight;
+        window.onresize = adjustIframeHeight;
+    </script>
 </body>
 </html>
