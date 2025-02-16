@@ -20,7 +20,7 @@
 \usepackage[numbers]{natbib}
 \usepackage[bottom]{footmisc}
 \frenchspacing
-\usepackage[left=0.6in, right=0.6in, top=0.65in, bottom=0.8in]{geometry}
+\usepackage[left=0.6in, right=0.6in, top=0.65in, bottom=0.75in]{geometry}
 
 %\hypersetup{pdfinfo={
 %Title={A Probabilistic Approach to Diabetes Risk Assessment Using Bayesian Networks}
@@ -44,7 +44,7 @@ faezeh.sarlakifar@studio.unibo.it
 \begin{abstract}
 \begin{quote}
 
-Diabetes is a chronic and widespread health condition that affects many individuals worldwide. Early prediction and risk assessment are essential for effective prevention and management. In this study, the application of Bayesian Networks (BNs) to model the probabilistic relationships between health indicators and diabetes risk is explored.  To enhance model performance, a comprehensive feature selection step values is employed, followed by the development of various Bayesian structures including Naïve Bayes, Hill Climbing, and domain knowledge-based techniques. The domain knowledge-based model achieved an AUC-ROC score of 83.57\%, outperforming pure data-driven approaches. The results demonstrate that Bayesian Networks offer an effective framework for diabetes risk prediction, providing healthcare professionals with an interpretable and reliable tool for patient assessment.
+Diabetes is a chronic and widespread health condition that affects many individuals worldwide. Early prediction and risk assessment are essential for effective prevention and management. In this study, the application of Bayesian Networks (BNs) to model the probabilistic relationships between health indicators and diabetes risk is explored.  To enhance model performance, a comprehensive feature selection step is employed, followed by the development of various Bayesian structures including Naïve Bayes, Hill Climbing (with different scoring methods), Simulated Annealing, and domain knowledge-based techniques. The domain knowledge-based model achieved an AUC-ROC score of 83.57\%, outperforming all other experimented approaches. The results demonstrate that Bayesian Networks offer an effective framework for diabetes risk prediction, providing healthcare professionals with an interpretable and reliable tool for patient assessment.
 
 \end{quote}
 \end{abstract}
@@ -97,7 +97,7 @@ In the proposed Bayesian Network, nodes represent key diabetes risk factors, whi
 
 Figure 1 presents the Domain Knowledge-Based Bayesian Network, illustrating the probabilistic dependencies between features.
 
- To establish the network structure, two approaches are employed:
+ To establish the network structure, two main approaches are employed:
 \begin{enumerate}
 	\item Data-Driven Learning: Bayesian structures are learned using algorithms including Hill Climbing (BIC, K2, BDeu) and Simulated Annealing, optimizing for the highest AUC-ROC score. These models establish probabilistic relationships purely from data. Using SHAP values, ten critical variables were identified: ``HighBP\footnote{Indicates whether a person has high blood pressure.}'', ``GenHlth\footnote{general health status.}'', ``HighChol\footnote{Presence of high cholesterol.}'', ``Age'', ``Sex'', ``Income'', ``DiffWalk\footnote{Difficulty in walking.}'', ``BMI'', ``HeartDiseaseorAttack'', and ``Education''. These variables serve as nodes in the AI-based Bayesian Networks.
 	\item Domain Knowledge-Based Network: A causally meaningful structure is designed based on established medical research, ensuring the relationships between variables align with known diabetes risk factors. The edges in this network reflect dependencies supported by scientific studies.

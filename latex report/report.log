@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.1.5)  16 FEB 2025 10:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.1.5)  16 FEB 2025 11:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -438,11 +438,11 @@ Package hyperref Info: Link coloring OFF on input line 30.
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
 * h-part:(L,W,R)=(43.36243pt, 527.57014pt, 43.36243pt)
-* v-part:(T,H,B)=(46.97505pt, 690.17873pt, 57.81621pt)
+* v-part:(T,H,B)=(46.97505pt, 693.79243pt, 54.2025pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
 * \textwidth=527.57014pt
-* \textheight=690.17873pt
+* \textheight=693.79243pt
 * \oddsidemargin=-28.90756pt
 * \evensidemargin=-28.90756pt
 * \topmargin=-25.29494pt
@@ -499,13 +499,10 @@ Underfull \hbox (badness 4595) in paragraph at lines 98--99
  []
 
 
+Underfull \hbox (badness 1048) in paragraph at lines 100--101
+[]\OT1/lmr/m/n/10 To es-tab-lish the net-work struc-ture, two main ap-
+ []
 
-[1{C:/Users/Faeze/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/Fa
-eze/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}
-
-
-
-{C:/Users/Faeze/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rmtt.enc}]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <9> on input line 102.
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -526,6 +523,14 @@ Underfull \hbox (badness 2221) in paragraph at lines 102--103
 At-
  []
 
+
+
+[1{C:/Users/Faeze/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/Fa
+eze/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}
+
+
+
+{C:/Users/Faeze/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rmtt.enc}]
 <images/bn-domain-knowledge.png, id=29, 573.8238pt x 448.074pt>
 File: images/bn-domain-knowledge.png Graphic file (type png)
 <use images/bn-domain-knowledge.png>
@@ -566,11 +571,11 @@ L3 programming layer <2024-12-09>
 Here is how much of TeX's memory you used:
  12601 strings out of 473576
  210982 string characters out of 5716297
- 624792 words of memory out of 5000000
+ 626792 words of memory out of 5000000
  35593 multiletter control sequences out of 15000+600000
  601793 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,11n,79p,922b,490s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,11n,79p,975b,522s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Faeze/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pf
 b><C:/Users/Faeze/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pf
 b><C:/Users/Faeze/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb
@@ -579,7 +584,7 @@ C:/Users/Faeze/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:
 /Users/Faeze/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/U
 sers/Faeze/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/U
 sers/Faeze/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb>
-Output written on report.pdf (2 pages, 322812 bytes).
+Output written on report.pdf (2 pages, 323085 bytes).
 PDF statistics:
  101 PDF objects out of 1000 (max. 8388607)
  26 named destinations out of 1000 (max. 500000)
